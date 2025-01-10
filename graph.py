@@ -38,7 +38,12 @@ def renderGraph(tree):
     #Render the graph to a file, cleanup removes previousely rendered graphs
     graph.render('astTree', cleanup=True)
 
-#function to extract entire AST with all nodes
-def showTree(tree):
-    for node in tree:
-        print(node.__class__.__name__)
+#Traverse through and print all tree information in AST
+def printJavaTree(tree):
+    for path, node in tree:
+        print("Path: ", path, " Node: ", node)
+        print(vars(node))   #Printing all node attributes
+
+#Prints all information of a node
+def printNode(node):
+    print(node)
