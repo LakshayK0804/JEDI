@@ -3,7 +3,7 @@ class javaTest1 {
     String works;
 
     public static void main(String[] args) {
-        if (a == 1) {
+        if (testingGithub == 1) {
             int c = 10;
         }
     }
