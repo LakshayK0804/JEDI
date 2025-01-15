@@ -53,9 +53,10 @@ def index():
         message = download_and_extract_java_files(repo_url)
         return jsonify({"message": message})
         # Creating AST tree from java file
-    for files in JAVA_FILES_DIR:
+    for files in os.listdir(JAVA_FILES_DIR):
         if files.endswith(".java"):
-            tree = createJavaAst(files)
+            file_path = os.path.join(JAVA_FILES_DIR, files)
+            tree = createJavaAst(file_path)
             # display graph to the screen
             renderGraph(tree)
 
