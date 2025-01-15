@@ -1,6 +1,6 @@
 class javaTest1 {
-    static int a = 1;
-    String b;
+    static int testingGithub = 1;
+    String works;
 
     public static void main(String[] args) {
         if (a == 1) {
