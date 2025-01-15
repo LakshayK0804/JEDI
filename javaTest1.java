@@ -1,4 +1,4 @@
-class javaTest1 {
+class javaTestGithubRepoChange {
     static int testingGithub = 1;
     String works;
 
