@@ -35,7 +35,7 @@ def addGraphNodes(node, graph, parent=None):
 # renders and creates graph file
 
 
-def renderGraph(tree, output_path="graphs/astTree"):
+def renderGraph(tree, output_path="static/astTree"):
     # Start the recursive process from the root of the AST
     '''
     addGraphNodes(tree, graph)
@@ -49,8 +49,9 @@ def renderGraph(tree, output_path="graphs/astTree"):
     addGraphNodes(tree, graph)
 
     # Render the graph to a file
-    graph.render(output_path, cleanup=True)
+    output_file = graph.render(output_path, cleanup=True)
 
+    return output_file + ".png"
 # Traverse through and print all tree information in AST
 
 
