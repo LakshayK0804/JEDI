@@ -24,10 +24,10 @@ public class javaTest1 {
         java.util.Map<String, String> map = new java.util.HashMap<>();
         map.put("key", null);
         System.out.println(map.get("key").length()); // Throws NullPointerException because value is null
-
+        int a;
         // Example 6: NullPointerException when using null value in a method return
         String result = getNullValue();
-        System.out.println(result.length()); // Throws NullPointerException because result is null
+        System.out.println(result.length()); // Throws NullPointerException because result is nulljavaTest1.java
     }
 
     // Example of a method that returns null
